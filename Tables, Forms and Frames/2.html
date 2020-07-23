@@ -1,0 +1,45 @@
+<!--Write a HTML program to create visitor information capture. The page should have the heading “Visitors information” and should ask the following information from the user : 
+• Email address using a textbox , 
+• User’s interest web for research or purchase as check box.
+• Occupation as  drop down box and preselected value should be given as (select one).
+• Check “want us to send you junk emails?” and the options given are “absolutely” and “no way man” using the radio button. 
+• A horizontal line divides the heading and the body content. Once all the inputs are given, the user should be able to submit or reset. 
+• This whole form should be tabulated using table tag,using forms -->
+
+
+<!doctype html>
+<head><title>Visitors Information</title></head>
+
+<h1>Visitors Information </h1>
+<hr>
+<body>
+    <table border ="2px">
+        <tr><th>
+Email: <input type="text" placeholder="Enter email"><br><br>
+Users Interest:<br> <input type="checkbox">Research<br>
+    <input type="checkbox">Purchase<br><br>
+    
+    
+     Occupation:<br>
+   <select >
+   
+        <option>Select one</option>
+        <option> Engineer</option>
+        <option>Teacher</option>
+        <option>Doctor</option>
+        <option>Painter</option>
+        <option>Advocate</option>
+        
+    </select><br><br>
+    
+    Want us to send you emails?:<br>
+     <input type="radio" name="yes">Absolutely
+            <input type="radio" name="no">No way man<br><br>
+    
+    <button>Submit</button>
+    <button>Reset</button><br>
+           
+        
+            </th></tr>
+    </table>
+</body>
