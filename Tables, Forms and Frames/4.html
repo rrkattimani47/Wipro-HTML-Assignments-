@@ -1,0 +1,235 @@
+<!--Write a HTML program to display the HTML page as described below:
+• Create a page which is divided in 3 parts. 30% horizontally on top and the rest 70 % bellow is split vertically in 2 parts again 30 % and 70% each
+• The Top header frame should display an image
+• Left side below frame should have a menu of “Font” and “Alignment”. 
+• If we click on “Font” link a different page which contains 5 different fonts with font’s names should be shown on the RHS
+• If we click on “Alignment” link a different page which contains a different alignment type should be shown on the RHS frame.
+• For this create 2 webpages named Font and Alignment.
+• Font page should have 5 names of different fonts displayed like this
+                               Agency FB
+                              Cambria
+                              Elephant 
+• Alignment page should have sample text aligned to different alignments, using frames-->
+
+
+<!-- frameset is used in HTML4, since I am using HTML 5, I am using CSS property-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alignments</title>
+<style>
+    img{
+        background-image: url(food3.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:aqua;
+        height: 30%;
+        width: 100%;
+        top: 0;
+        right: 0; 
+        position: fixed;       
+    }
+    p{
+        text-align: center;
+    }
+    div.a{
+        background-color: black;
+        color: white;
+        height: 100%;
+        width: 30%;
+        top:30%;
+        left: 0;
+        position: fixed;
+    }
+    div.b{
+        background-color: white;
+        color: black;
+        height: 100%;
+        width: 70%;
+        top: 30%;
+        position: fixed;
+        right: 0;
+    }
+    p{
+        padding-top: 20px;
+        color: white;
+        text-decoration: underline;
+        font-size: xx-large;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: xx-large;
+        margin-left: 50px;
+    }
+    p.z{
+        color: black;
+        text-decoration: none;
+        font-size: large;
+    }
+</style>
+<body>
+    <img>
+    <div class="a">
+        <p>Fonts And Alignment :</p>
+        <a href="fonts.html" target="_blank">1. Fonts</a><br><br>
+        <a href="alignments.html" target="_blank">2. Alignments </a><br>
+    </div>
+    <div class="b">
+      <p class="z" style="text-align:left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nullam feugiat nunc nec diam ultricies, vitae blandit diam efficitur.</p>
+      <p class="z" style="text-align:right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nullam feugiat nunc nec diam ultricies, vitae blandit diam efficitur.</p>
+      <p class="z" style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nullam feugiat nunc nec diam ultricies, vitae blandit diam efficitur.</p>
+      <p class="z" style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nullam feugiat nunc nec diam ultricies, vitae blandit diam efficitur.</p>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--fonts.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fonts</title>
+<style>
+    img{
+        background-image: url(1.JPG);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:aqua;
+        height: 30%;
+        width: 100%;
+        top: 0;
+        right: 0; 
+        position: fixed;       
+    }
+    p{
+        text-align: center;
+    }
+    div.a{
+        background-color: black;
+        color: white;
+        height: 100%;
+        width: 30%;
+        top:30%;
+        left: 0;
+        position: fixed;
+    }
+    div.b{
+        background-color: white;
+        color: black;
+        height: 100%;
+        width: 70%;
+        top: 30%;
+        position: fixed;
+        right: 0;
+    }
+    li{
+        margin-left: 20px;
+        font-size: x-large;
+    }
+    p{
+        padding-top: 20px;
+        color: white;
+        text-decoration: underline;
+        font-size: xx-large;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: xx-large;
+        margin-left: 50px;
+    }
+</style>
+<body>
+    <img>
+    <div class="a">
+        <p>Fonts And Alignment :</p>
+        <a href="fonts.html" target="_blank">1. Fonts</a><br><br>
+        <a href="alignments.html" target="_blank">2. Alignments </a><br>
+    </div>
+    <div class="b">
+        <ul>
+            <li>Times New Roman</li><br>
+            <li>Aerial Black</li><br>
+            <li>Cambria</li><br>
+            <li>Elehant</li><br>
+            <li>Verdana</li><br>
+        </ul>
+    </div>
+
+</body>
+</html>
+
+
+
+<!--home.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<style>
+    img{
+        background-image: url(1.JPG);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:aqua;
+        height: 30%;
+        width: 100%;
+        top: 0;
+        right: 0; 
+        position: fixed;       
+    }
+    p{
+        text-align: center;
+    }
+    div.a{
+        background-color: black;
+        color: white;
+        height: 100%;
+        width: 30%;
+        top:30%;
+        left: 0;
+        position: fixed;
+    }
+    li{
+        margin-left: 20px;
+        font-size: x-large;
+    }
+    p{
+        padding-top: 20px;
+        color: white;
+        text-decoration: underline;
+        font-size: xx-large;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: xx-large;
+        margin-left: 50px;
+    }
+</style>
+<body>
+    <img>
+    <div class="a">
+        <p>Fonts And Alignment :</p>
+        <a href="fonts.html" target="_blank">1. Fonts </a><br><br>
+        <a href="alignments.html" target="_blank">2. Alignments </a><br>
+    </div>
+
+</body>
+</html>
