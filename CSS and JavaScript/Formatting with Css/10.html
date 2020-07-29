@@ -1,0 +1,68 @@
+<!--Using CSS, create a web page that displays text “Welcome to CSS World” with an image as its border, 
+
+a. Image repeats itself to fit the contents
+b. Image should stretch to fit the contents-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CSS ASSIGNMENT 10</title>
+
+<style>
+#img{
+	border: 30px solid;
+    border-image-source: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmNH9S_0IIvmWor7VMy5Gv8gid7-2Ce5epiA&usqp=CAU");
+    padding: 5px;
+    border-image-slice: 30;
+    border-image-repeat: repeat;
+    
+    
+color:#00BFFF;
+font-size:25px;
+text-align:center;
+font-family:calibri;
+}
+
+</style>
+</head>
+<body>
+
+<p id="img">WELCOME TO CSS WORLD!!!</p>
+
+</body>
+</html>
+
+
+<!--b-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CSS ASSIGNMENT 10</title>
+
+<style>
+#img{
+	border: 20px solid;
+    border-image-source: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmNH9S_0IIvmWor7VMy5Gv8gid7-2Ce5epiA&usqp=CAU");
+    padding: 15px;
+    border-image-slice: 30;
+    border-image-repeat: stretch;
+    
+    
+    
+color:#00BFFF;
+font-size:25px;
+text-align:center;
+font-family:calibri;
+}
+
+</style>
+</head>
+<body>
+
+<p id="img">WELCOME TO CSS WORLD!!!</p>
+
+</body>
+</html>
