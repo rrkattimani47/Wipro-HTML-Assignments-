@@ -1,0 +1,33 @@
+//Write a JavaScript function that checks whether a passed string is palindrome or not?
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+function rev(str)
+{
+    var s=str.split("").reverse().join("")
+    if(str==s){
+        document.write("palindrome:")
+
+    }
+    else{
+        document.write("not a palindrome:")
+    }
+    return s
+}
+document.write(rev("121"))
+document.write("</br>")
+document.write(rev("mom"))
+document.write("</br>")
+document.write(rev("Rashmi"))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
