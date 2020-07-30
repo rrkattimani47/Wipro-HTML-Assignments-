@@ -1,0 +1,23 @@
+//Write a JavaScript program that displays the position of the first occurrence of "World" in the variable txt.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            var str = "Hello world, welcome to the universe.";
+            var n = str.indexOf("world");
+            document.getElementById("demo").innerHTML = n;
+          }
+
+    </script>
+</head>
+<body>
+    <button onclick="myFunction()">Click</button>
+
+<p id="demo"></p>
+</body>
+</html>
