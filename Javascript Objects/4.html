@@ -1,0 +1,25 @@
+/* Create an HTML page with two textboxes and a Calculate button:
+When user enters the numbers and clicks the Calculate button, it has to alert the sum.  */
+
+<html>
+<body>
+    
+                    <h1>Add two number using text box as input using javascript</h1>
+        
+            Enter First Number : <br>
+            <input type="text" id="T1" name="T1">
+            <br>
+            Enter Second Number : <br>
+            <input type="text" id="T2" name="T2">
+            <br>
+         <input type="button" name="clickbtn" value="Calculate" onclick="add_number()">
+
+        <script type="text/javascript">
+            function add_number(){
+            var first_number = parseInt(document.getElementById("T1").value);
+            var second_number = parseInt(document.getElementById("T2").value);
+            result = first_number + second_number;
+			alert("The sum is "+result);
+		  }
+        </script>
+</html>
