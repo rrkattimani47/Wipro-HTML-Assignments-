@@ -1,0 +1,47 @@
+/* Write validation functions and modify the onSubmit event Handler in the form code to validate the following form fields:
+1. Member number
+• Must be entered
+• Must be a number
+2. Password
+• Must be entered
+• Must be longer than 4 characters
+If an error occurs, use an alert box to display an error message for the first field in error and place the cursor in the first field in error.*/
+
+<html>
+<body>
+<script type="text/javascript"> 
+ function loginValidation()
+ { 
+	 var uname = document.getElementById("uname"); 
+ 	var pwd = document.getElementById("pwd"); 
+ 	if(uname.value.trim()==""||isNaN(uname) || uname < 1 || uname > 100)
+	{ 
+ 		alert("Blank Member number or not a number "); 
+		uname.focus();
+ 	    return false; 
+	} 
+	else if(pwd.value.trim()=="")
+	{
+		alert("Blank Password"); 
+ 	    return false;
+	}
+	else if(pwd.value.trim().length<4)
+	{
+		alert("password too short"); 
+ 	    return false;
+	}
+	else{
+	return true;
+	}
+ 	}
+</script>
+<form onsubmit="return loginValidation()" >
+ <table> 
+ <tr><td>Member Number</td><td> <input type="text" id="uname"/></td></tr> 
+ <tr><td>Password </td><td><input type="password" id="pwd"/></td></tr>
+  <tr><td colspan="2" align="Center"><button type="Submit">Submit</button></td></tr>  
+  </table> 
+
+  </form>
+</body>
+</html>
